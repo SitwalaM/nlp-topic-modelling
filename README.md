@@ -14,7 +14,7 @@ The text preprocessing phase in NLP involves removing stopwords, punctuation mar
 
 ## Dataset Used
 
-We would use Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using Tweepy (http://docs.tweepy.org/en/latest/)and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to enbale us track.......(ask sitwala).
+We would use Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using Tweepy (http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to enbale us track.......(ask sitwala).
 
 ## Preprocessing
 
