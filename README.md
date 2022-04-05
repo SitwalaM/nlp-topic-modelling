@@ -26,15 +26,11 @@ Before we performed the tokenization on the dataset, we created a word cloud wit
 
 ![WordCloud](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/wordcloud.png)
 
-<img src="https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/wordcloud.png"
-     alt="WordCloud"
-     style="float: center; margin-right: 10px;" />
-
-
-From our word cloud above, we see our most dominant and important words aside South Africa relate to violence.
-
+From our word cloud above, we see our most dominant and important words aside South Africa relate to violence and that exactly is what we are tracking.
 
 ### Tokenization
+
+
 ### Stemming & Lemmentization
 ### Vectorization
 ## Modeling
