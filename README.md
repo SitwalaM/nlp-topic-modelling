@@ -18,7 +18,13 @@ We would use Machine Learning to explore which topics our followers on twitter a
 
 ## Preprocessing
 
-After pulling and refining the data from the Twitter api and importing the required packages, we the converted it into a data frame and cleaned the data from emojis, hashtags, extra spaces, punctuations, usernames, urls, and other unecessary signs and symbols  so we can tokenize it for the next steps. 
+After pulling and refining the data from the Twitter api and importing the required packages, we the converted it into a data frame and cleaned the data using a regex function to remove emojis, hashtags, extra spaces, punctuations, usernames, urls, and other unecessary signs and symbols so we can tokenize it for the next steps.
+
+### Word Cloud
+
+Before we performed the tokenization on the dataset, we created a word cloud with our cleaned dataset to visualize the most important words. A word cloud is a visual representation of text data, which is often used to depict keyword metadata on websites, or to visualize free form text. Tags are usually single words, and the importance of each tag is shown with font size or color.
+
+
 
 ### Tokenization
 ### Stemming & Lemmentization
