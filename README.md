@@ -28,7 +28,7 @@ Before we performed the tokenization on the dataset, we created a word cloud wit
 
 <img src="https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/wordcloud.png"
      alt="WordCloud"
-     style="float: left; margin-right: 10px;" />
+     style="float: center; margin-right: 10px;" />
 
 
 From our word cloud above, we see our most dominant and important words aside South Africa relate to violence.
