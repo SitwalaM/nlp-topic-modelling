@@ -1,10 +1,10 @@
-# Topic Modeling with Natural Language Process (NLP)
+# Topic Modelling with Natural Language Process (NLP)
 
 ## Introduction
 
 Natural language processing (NLP) refers to the branch of computer science—and more specifically, the branch of artificial intelligence or AI—concerned with giving computers the ability to understand text and spoken words in much the same way human beings can. Its end applications are many — chatbots, recommender systems, search, virtual assistants, etc.
 
-For this project we chose to focus on the **Topic Modeling** aspect of Natural Language Processing. 
+For this project we chose to focus on the **Topic Modelling** aspect of Natural Language Processing. 
 
 Topic modelling is recognizing the words from the topics present in the document or the corpus of data. This is useful because extracting the words from a document takes more time and is much more complex than extracting them from topics present in the document. For example, there are 1000 documents and 500 words in each document. So to process this it requires 500*1000 = 500000 threads. So when you divide the document containing certain topics then if there are 5 topics present in it, the processing is just 5*500 words = 2500 threads. This is simplier than processing the entire document and this is how topic modelling works.
 
@@ -14,7 +14,7 @@ The text preprocessing phase in NLP involves removing stopwords, punctuation mar
 
 ## Dataset Used
 
-We would use Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using Tweepy (http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to enbale us track.......(ask sitwala).
+We would use Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using Tweepy (http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to enbale us track the change in activities on topics such as unrest and riots.
 
 ## Preprocessing
 
