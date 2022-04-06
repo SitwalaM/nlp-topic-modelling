@@ -6,12 +6,17 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 from nltk.stem.wordnet import WordNetLemmatizer
 import pickle
+import os
+
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
 # download stop_words
 nltk.download('stopwords')
 
-
-data = pd.read_csv("scripts/dataset.csv", parse_dates=["date_created"],   encoding="ISO-8859-1")
+#for testing routine
+#data = pd.read_csv("dataset.csv", parse_dates=["date_created"],   encoding="ISO-8859-1")
 
 
 def clean(text):

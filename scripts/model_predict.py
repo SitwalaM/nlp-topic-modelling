@@ -4,15 +4,20 @@ import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
+import os
+
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
 
 
 # load model
-with open("scripts/lda_model.pk","rb") as f:
+with open("lda_model.pk","rb") as f:
   lda_model = pickle.load(f)
 
 # vectorizer  
-vectorizer = pickle.load(open("scripts/vectorizer.pickle", 'rb'))
+vectorizer = pickle.load(open("vectorizer.pickle", 'rb'))
 
 # topics
 topics = list(np.arange(0,10))
@@ -47,9 +52,11 @@ def get_inference(model, vectorizer, topics, text, threshold):
     return topics[np.argmax(score)]
 
 
-
-data = pd.read_csv("scripts/dataset.csv", parse_dates=["date_created"],   encoding="ISO-8859-1")
+#for testing predictions
+''''
+data = pd.read_csv("dataset.csv", parse_dates=["date_created"],   encoding="ISO-8859-1")
 from twitter_preprocessing import process_tweets
 cleaned_df = process_tweets(data)
 cleaned_df["topic"] = cleaned_df.clean_tweet.apply(lambda x: get_inference(lda_model,vectorizer,topics,x,0))
 cleaned_df.to_csv("output.csv")
+'''
