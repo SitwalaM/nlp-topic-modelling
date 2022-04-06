@@ -1,4 +1,4 @@
-# Topic Modelling with Natural Language Process (NLP)
+# Topic Modelling with Natural Language Processing (NLP)
 
 ## Introduction
 
@@ -32,8 +32,16 @@ From our word cloud above, we see our most dominant and important words aside So
 
 Next we performed tokenization by using the **Python split() Function** to split the tweets into smaller units, such as individual so the meaning of the text could easily be interpreted by analyzing the words present in the text. Before processing a natural language, we need to identify the words that constitute a string of characters. That’s why tokenization is the most basic step to proceed with NLP (text data). 
 
-### Stemming & Lemmentization
+### Lemmentization
+
+Lemmatization brings a shorter word or base word. The difference between it and stemming is it gets a much more meaningful form than what stemming does and it is more accurate than stemming.  Using lemmatization is useful but it comes at a cost to the accuracy of the models which we experienced. Our topic results improved when we skipped the lemmatization step.
+
 ### Vectorization
+
+To build any model in machine learning or deep learning, the final level data has to be in numerical form because models don’t understand text or image data directly as humans do. Word vectorization is done to convert the text data into numerical vectors which are used to find word predictions, and word similarities/semantics. We first tried the CountVectorizer but had to switch to using TfidfVectorizer because it showed better results with n-grams.
+
+#### (talk about ngrams)	
+
 ## Modeling
 ## Dashboard
 
