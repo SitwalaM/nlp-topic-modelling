@@ -30,15 +30,20 @@ From our word cloud above, we see our most dominant and important words aside So
 
 ### Tokenization
 
+Next we performed tokenization by using the **Python split() Function** to split the tweets into smaller units, such as individual so the meaning of the text could easily be interpreted by analyzing the words present in the text. Before processing a natural language, we need to identify the words that constitute a string of characters. That’s why tokenization is the most basic step to proceed with NLP (text data). 
 
 ### Stemming & Lemmentization
 ### Vectorization
 ## Modeling
 ## Dashboard
 
-*sources: 
-https://www.ibm.com/cloud/learn/natural-language-processing
-https://www.analyticsvidhya.com/blog/2021/05/topic-modelling-in-natural-language-processing/
+*sources:  
+
+https://www.ibm.com/cloud/learn/natural-language-processing  
+
+https://www.analyticsvidhya.com/blog/2021/05/topic-modelling-in-natural-language-processing/  
+
+https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.
 *
 
 
