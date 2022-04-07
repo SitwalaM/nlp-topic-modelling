@@ -28,7 +28,7 @@ After pulling and refining the data from the Twitter api and importing the requi
 
 Before we performed the tokenization on the dataset, we created a word cloud with our cleaned dataset to visualize the most important words. A word cloud is a visual representation of text data, which is often used to depict keyword metadata on websites, or to visualize free form text. Tags are usually single words, and the importance of each tag is shown with font size or color.
 
-![WordCloud](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/images/wordcloud.png)
+![WordCloud](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/images/wordcloud%20new.png)
 
 From our word cloud above, we see our most dominant and important words aside South Africa relate to violence and that exactly is what we are tracking.
 
