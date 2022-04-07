@@ -18,9 +18,11 @@ The text preprocessing phase in NLP involves removing stopwords, punctuation mar
 
 We used Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using Tweepy (http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to enbale us track the change in activities on topics such as unrest and riots.
 
+Notebook used to extract data: https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/notebooks/twitter_starter.ipynb
+
 ## Preprocessing
 
-After pulling and refining the data from the Twitter api and importing the required packages, we then converted it into a data frame and cleaned the data using a regex function to remove emojis, hashtags, extra spaces, punctuations, usernames, urls, and other unecessary signs and symbols so we can tokenize it for the next steps.
+After pulling and refining the data from the Twitter api and importing the required packages, we then converted it into a data frame and cleaned the data using a regex function to remove emojis, hashtags, extra spaces, punctuations, usernames, urls, and other unecessary signs and symbols so we can tokenize it for the next steps. Also, all stop words were removed using nltk stopwords.
 
 ### Word Cloud
 
