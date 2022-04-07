@@ -47,6 +47,6 @@ dtypes_dictionary = {"id": sqlalchemy.types.BigInteger,
                     "topic": sqlalchemy.types.Numeric
                     }
 
-dataframe = pd.read_csv("output.csv")
-
-update_db_with_data(database_connection, dataframe, "topics", dtypes_dictionary)
+#for testing
+#dataframe = pd.read_csv("output.csv")
+#update_db_with_data(database_connection, dataframe, "topics", dtypes_dictionary)
