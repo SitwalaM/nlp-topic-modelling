@@ -43,6 +43,9 @@ Lemmatization brings a shorter word or base word. The difference between it and 
 To build any model in machine learning or deep learning, the final level data has to be in numerical form because models don’t understand text or image data directly as humans do. Word vectorization is done to convert the text data into numerical vectors which are used to find word predictions, and word similarities/semantics. We used the TfidfVectorizer with n-grams.
 
 ## Modeling
+
+LDA represents documents as mixtures of topics that spit out words with certain probabilities.
+
 ## Dashboard
 
 *sources:*  
