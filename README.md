@@ -20,7 +20,7 @@ Notebook used to extract data: https://github.com/SitwalaM/nlp-topic-modelling/b
 
 ## Preprocessing
 
-After pulling and refining the data from the Twitter api and importing the required packages, we then converted it into a data frame and cleaned the data using a regex function to remove emojis, hashtags, extra spaces, punctuations, usernames, urls, and other unecessary signs and symbols so we can tokenize it for the next steps.
+After pulling and refining the data from the Twitter api and importing the required packages, we then converted it into a data frame and cleaned the data using a regex function to remove emojis, hashtags, extra spaces, punctuations, usernames, urls, and other unecessary signs and symbols so we can tokenize it for the next steps. Also, all stop words were removed using nltk stopwords.
 
 ### Word Cloud
 
