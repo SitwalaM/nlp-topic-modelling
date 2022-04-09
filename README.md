@@ -50,13 +50,17 @@ LDA represents documents as mixtures of topics that spit out words with certain 
 
 ## Dashboard
 
-*sources:*  
+## References
 
-https://www.ibm.com/cloud/learn/natural-language-processing  
+[Airflow on AWS EC2](https://christo-lagali.medium.com/getting-airflow-up-and-running-on-an-ec2-instance-ae4f3a69441)
 
-https://www.analyticsvidhya.com/blog/2021/05/topic-modelling-in-natural-language-processing/  
+[IBM NLP Tutorial](https://www.ibm.com/cloud/learn/natural-language-processing ) 
 
-https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.
+[NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/05/topic-modelling-in-natural-language-processing/)  
+
+[NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.)
+
+## Authors
 
 
 
