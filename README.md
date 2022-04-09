@@ -8,7 +8,9 @@ For this project we chose to focus on the **Topic Modelling** aspect of Natural 
 
 Topic modelling is recognizing the words from the topics present in the document or the corpus of data. This is useful because extracting the words from a document takes more time and is much more complex than extracting them from topics present in the document. For example, there are 1000 documents and 500 words in each document. So to process this it requires 500x1000 = 500000 threads. So when you divide the document containing certain topics then if there are 5 topics present in it, the processing is just 5x500 words = 2500 threads. This is simplier than processing the entire document and this is how topic modelling works.
 
-In Topic modelling, topics that best describes a set of documents are identified. These topics will only emerge during the topic modelling process (therefore called latent). And one popular topic modelling technique is known as Latent Dirichlet Allocation (LDA). It is an unsupervised approach of recognizing or extracting the patterns of word clusters and frequencies of words in the document by detecting the patterns like clustering algorithms which divides the data into different parts. 
+In Topic modelling, topics that best describes a set of documents are identified. These topics will only emerge during the topic modelling process (therefore called latent). And one popular topic modelling technique is known as Latent Dirichlet Allocation (LDA). It is an unsupervised approach of recognizing or extracting the patterns of word clusters and frequencies of words in the document by detecting the patterns like clustering algorithms which divides the data into different parts.
+
+A very important thing to keep in mind here is that it's actually very difficult to evaluate an unsupervised learning model's effectiveness because we didn't actually know the correct topic or the right answer to begin with. All we know is that the documents clustered together share some sort of similar topic ideas. It's up to the user to identify what these topics actually represent. 
 
 The text preprocessing phase in NLP involves removing stopwords, punctuation marks and other unnecessary symbols, stemming, lemmatization and encoding them to ML language using Countvectorizer or Tfidf vectorizer to make text processing easier.
 
@@ -26,7 +28,7 @@ After pulling and refining the data from the Twitter api and importing the requi
 
 Before we performed the tokenization on the dataset, we created a word cloud with our cleaned dataset to visualize the most important words. A word cloud is a visual representation of text data, which is often used to depict keyword metadata on websites, or to visualize free form text. Tags are usually single words, and the importance of each tag is shown with font size or color.
 
-![WordCloud](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/images/wordcloud.png)
+![WordCloud](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/images/wordcloud%20new.png)
 
 From our word cloud above, we see our most dominant and important words aside South Africa relate to violence and that exactly is what we are tracking.
 
@@ -40,18 +42,25 @@ Lemmatization brings a shorter word or base word. The difference between it and 
 
 ### Vectorization
 
-To build any model in machine learning or deep learning, the final level data has to be in numerical form because models don’t understand text or image data directly as humans do. Word vectorization is done to convert the text data into numerical vectors which are used to find word predictions, and word similarities/semantics. We first tried the CountVectorizer but had to switch to using TfidfVectorizer because it showed better results with n-grams.
+To build any model in machine learning or deep learning, the final level data has to be in numerical form because models don’t understand text or image data directly as humans do. Word vectorization is done to convert the text data into numerical vectors which are used to find word predictions, and word similarities/semantics. We used the TfidfVectorizer with n-grams.
 
 ## Modeling
+
+LDA represents documents as mixtures of topics that spit out words with certain probabilities.
+
 ## Dashboard
 
-*sources:*  
+## References
 
-https://www.ibm.com/cloud/learn/natural-language-processing  
+[Airflow on AWS EC2](https://christo-lagali.medium.com/getting-airflow-up-and-running-on-an-ec2-instance-ae4f3a69441)
 
-https://www.analyticsvidhya.com/blog/2021/05/topic-modelling-in-natural-language-processing/  
+[IBM NLP Tutorial](https://www.ibm.com/cloud/learn/natural-language-processing ) 
 
-https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.
+[NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/05/topic-modelling-in-natural-language-processing/)  
+
+[NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.)
+
+## Authors
 
 
 
