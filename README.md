@@ -61,9 +61,9 @@ LDA represents documents as mixtures of topics that spit out words with certain 
 [NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.)
 
 ## Authors
-Nancy(https://github.com/NancyArmah)
-Douglas(https://github.com/obengdouglas0
-Mary(https://github.com/githinjimary)
-Siwala(https://github.com/SitwalaM)
+* [Nancy](https://github.com/NancyArmah)
+* [Douglas](https://github.com/obengdouglas0)
+* [Mary](https://github.com/githinjimary)
+* [Siwala](https://github.com/SitwalaM)
 
 
