@@ -38,11 +38,11 @@ Next we performed tokenization by using the **Python split() Function** to split
 
 ### Lemmentization
 
-Lemmatization brings a shorter word or base word. The difference between it and stemming is it gets a much more meaningful form than what stemming does and it is more accurate than stemming.  Using lemmatization is useful but it comes at a cost to the accuracy of the models which we experienced. Our topic results improved when we skipped the lemmatization step.
+Lemmatization brings a shorter word or base word. The difference between it and stemming is it gets a much more meaningful form than what stemming does and it is more accurate than stemming. The advantage of this is, we get to reduce the total number of unique words in the dictionary. As a result, the number of columns in the document-word matrix created by TfidfVectorizer will be denser with lesser columns.
 
 ### Vectorization
 
-To build any model in machine learning or deep learning, the final level data has to be in numerical form because models don’t understand text or image data directly as humans do. Word vectorization is done to convert the text data into numerical vectors which are used to find word predictions, and word similarities/semantics. We used the TfidfVectorizer with n-grams.
+To build any model in machine learning or deep learning, the final level data has to be in numerical form because models don’t understand text or image data directly as humans do. Word vectorization is done to convert the text data into numerical vectors which are used to find word predictions, and word similarities/semantics. We used the TfidfVectorizer with n-grams so that instead of a single word count, we can count the word pairs. In our case bigrams and trigrams so that we are no longer treating a single word, we are now dealing with pairs and triplets. Using n_grams together with the TfidVectorizer improved our LDA model significantly.
 
 ## Modeling
 
