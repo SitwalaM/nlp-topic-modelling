@@ -56,7 +56,7 @@ Before we performed the tokenization on the dataset, we created a word cloud wit
 </div>
 
 
-From our word cloud above, we see our most dominant and important words aside South Africa relate to violence and that exactly is what we are tracking.
+From our word cloud above, we see our most dominant and important words aside South Africa relate to violence and that is exactly what we are tracking.
 
 ### Tokenization
 
