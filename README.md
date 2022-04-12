@@ -57,7 +57,7 @@ We also tried modelling with Non-Negative Matrix Factorization and the results f
 
 ## Dashboard
 
-A dashboard tracking the trend of a single topic of interest has been built and deployed using Tableau Public. The dashboard has been deployed to [NLP Tweet Monitor](https://)
+A dashboard tracking the trend of a single topic of interest has been built and deployed using Tableau Public. The dashboard has been deployed to [NLP Tweet Monitor](https://public.tableau.com/app/profile/douglas.obeng4472/viz/Tanamadosi1/Dashboard?publish=yes)
 
 ## Credits
 
