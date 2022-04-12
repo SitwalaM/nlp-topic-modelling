@@ -12,6 +12,9 @@ os.chdir(dname)
 
 def extract():
     #read configs -- setup ini file using API credentials
+    #returns tweets in pandas dataframe
+
+
     f = open("config.ini", "r")
     print(f.read())
     config = configparser.ConfigParser()
@@ -30,10 +33,14 @@ def extract():
 
     tweets = [page for page in tweepy.Cursor(api.search_tweets, q ="south africa -filter:RT", lang = "en",
                                             result_type = "mixed",
-                                            count = 20).pages(120)]# Open/create a file to append data to
+                                            count = 10).pages(20)]# Open/create a file to append data to
 
     # write to csv file
     filename = str(dt.date.today()) + ".csv"
+    if  os.path.exists(filename):
+    	os.remove(filename)
+    else:
+        	pass
     csvFile = open(filename, 'a')
     #Use csv writer
     csvWriter = csv.writer(csvFile, delimiter = ",")

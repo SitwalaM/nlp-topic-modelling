@@ -52,11 +52,3 @@ def get_inference(model, vectorizer, topics, text, threshold):
     return topics[np.argmax(score)]
 
 
-'''
-#for testing predictions
-data = pd.read_csv("dataset.csv", parse_dates=["date_created"],   encoding="ISO-8859-1")
-from twitter_preprocessing import process_tweets
-cleaned_df = process_tweets(data)
-cleaned_df["topic"] = cleaned_df.clean_tweet.apply(lambda x: get_inference(lda_model,vectorizer,topics,x,0))
-cleaned_df.to_csv("output.csv")
-'''

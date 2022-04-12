@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 
 #credentials
 user = 'root'
-passw = ''  #insert your password here
+passw = 'jesuswalks'  #insert your password here
 host =  'localhost'
 port = 3306
 database = 'nlp'
@@ -33,7 +33,8 @@ def update_db_with_data(database_connection, dataframe, table_name, dtypes_dicti
 
     dataframe.to_sql(con=database_connection,
                      name=table_name,
-                     if_exists='replace',
+                     if_exists='append',
+                     index = False,
                      dtype = dtypes_dictionary,
                      chunksize=1000)
     return None
@@ -47,6 +48,4 @@ dtypes_dictionary = {"id": sqlalchemy.types.BigInteger,
                     "topic": sqlalchemy.types.Numeric
                     }
 
-#for testing
-#dataframe = pd.read_csv("output.csv")
-#update_db_with_data(database_connection, dataframe, "topics", dtypes_dictionary)
+

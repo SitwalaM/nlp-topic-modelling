@@ -20,7 +20,9 @@ nltk.download('stopwords')
 
 
 def clean(text):
-    """cleans the text to prepare for NLP using regex"""
+    # cleans the text using regex library
+    # input: text => Strings 
+    # returns: text => cleaned Strings
     
     text = str(text).lower()
     text = re.sub(r'@\w+', ' ', text)
@@ -40,10 +42,11 @@ def clean(text):
     return text
 
 def process_tweets(df):
-
-    # clean tweets
+    # removes stopwords from the tweets
+    # input: df=> pandas dataframe with column "clean tweet"
+    # returns: df => pandas dataframe with stopwords removed
+   
     df['clean_tweet'] = df.tweet.apply(clean)
-
     # remove the stopwords
     stop_words = set(stopwords.words("english"))
     df["clean_tweet"] = df["clean_tweet"].apply(lambda x : " ".join([w.lower() for w in x.split() if w not in stop_words and len(w) > 3]))
