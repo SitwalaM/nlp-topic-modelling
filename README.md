@@ -55,7 +55,7 @@ LDA represents documents as mixtures of topics that spit out words with certain 
 
 ## Dashboard
 
-## References
+## Credits
 
 1. [Airflow on AWS EC2](https://christo-lagali.medium.com/getting-airflow-up-and-running-on-an-ec2-instance-ae4f3a69441)
 
