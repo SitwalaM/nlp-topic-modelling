@@ -12,13 +12,13 @@ In Topic modelling, topics that best describes a set of documents are identified
 
 A very important thing to keep in mind here is that it's actually very difficult to evaluate an unsupervised learning model's effectiveness because we didn't actually know the correct topic or the right answer to begin with. All we know is that the documents clustered together share some sort of similar topic ideas. It's up to the user to identify what these topics actually represent. 
 
-The text preprocessing phase in NLP involves removing stopwords, punctuation marks and other unnecessary symbols, stemming, lemmatization and encoding them to ML language using Countvectorizer or Tfidf vectorizer to make text processing easier.
+The text preprocessing phase in NLP involves removing stopwords, punctuation marks and other unnecessary symbols, stemming, lemmatization and encoding them to ML language using [Countvectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) or [Tfidf](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) vectorizer to make text processing easier.
 
 ## Dataset Used
 
-We used Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using Tweepy (http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to enbale us track the change in activities on topics such as unrest and riots.
+We used Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using [Tweepy](http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to enbale us track the change in activities on topics such as unrest and riots.
 
-Notebook used to extract data: https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/notebooks/twitter_starter.ipynb
+Notebook used to extract data:[ Data Pull Notebook](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/notebooks/twitter_starter.ipynb)
 
 ## Preprocessing
 
@@ -52,18 +52,18 @@ LDA represents documents as mixtures of topics that spit out words with certain 
 
 ## References
 
-[Airflow on AWS EC2](https://christo-lagali.medium.com/getting-airflow-up-and-running-on-an-ec2-instance-ae4f3a69441)
+1. [Airflow on AWS EC2](https://christo-lagali.medium.com/getting-airflow-up-and-running-on-an-ec2-instance-ae4f3a69441)
 
-[IBM NLP Tutorial](https://www.ibm.com/cloud/learn/natural-language-processing ) 
+2. [IBM NLP Tutorial](https://www.ibm.com/cloud/learn/natural-language-processing ) 
 
-[NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/05/topic-modelling-in-natural-language-processing/)  
+3. [NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/05/topic-modelling-in-natural-language-processing/)  
 
-[NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.)
+4. [NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.)
 
 ## Authors
-* [Nancy](https://github.com/NancyArmah)
-* [Douglas](https://github.com/obengdouglas0)
-* [Mary](https://github.com/githinjimary)
-* [Siwala](https://github.com/SitwalaM)
+1. [Nancy](https://github.com/NancyArmah)
+2. [Douglas](https://github.com/obengdouglas0)
+3. [Mary](https://github.com/githinjimary)
+4. [Siwala](https://github.com/SitwalaM)
 
 
