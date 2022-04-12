@@ -51,7 +51,9 @@ To build any model in machine learning or deep learning, the final level data ha
 
 ## Modeling
 
-LDA represents documents as mixtures of topics that spit out words with certain probabilities.
+In natural language processing, the latent Dirichlet allocation (LDA) discovers topics in a collection of documents, and then automatically classify any individual document within the collection in terms of how "relevant" it is to each of the discovered topics. A topic is considered to be a set of terms (i.e. individual words or phrases) that, taken together, suggest a shared theme. LDA represents documents as mixtures of topics that spit out words with certain probabilities. We started with 10 topic numbers but after Grid searching, 5 was returned as the optimal number of topics.
+
+We also tried modelling with Non-Negative Matrix Factorization and the results from it didnt vary much from LDA so we settled on using LDA and fine tuned it to perform better using grid search.
 
 ## Dashboard
 
@@ -64,6 +66,10 @@ LDA represents documents as mixtures of topics that spit out words with certain 
 3. [NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/05/topic-modelling-in-natural-language-processing/)  
 
 4. [NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.)
+
+5. [LDA](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
+
+6. [Sklearn LDA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html)
 
 ## Authors
 1. [Nancy](https://github.com/NancyArmah)
