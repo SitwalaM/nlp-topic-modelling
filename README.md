@@ -14,7 +14,12 @@
 
 Public sentiment can often be gauged by activity and discussions on social media platforms such as twitter. Topic modelling is an unsupervised machine learning algorithm that can be used to collect abstract topics in a collection of documents. In this project, the aim is to use topic modelling to monitor activity on tweets that are polarizing in nature and could lead to public unrest. This type of modelling can be used for other use cases such as tracking activity in discussions around investments such as cryptocurrency. In this project, we use data from South Africa to use topic modelling to attempt to isolate tweets centred around anti-foreigner sentiment. These insights can be used as an alert for possible unrest due to rise in polarizing discussions on social media. The architecture of the for the pipeline used is shown below, a topic model is used to process a batch of tweets every 8 hours and the metrics for the topic of interest (anti-foreigner sentiment) are monitored in a dashboard.
 
-![system](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/images/system.png)
+<div align="center">
+  
+<img src="https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/images/system.png" width="450">
+  
+</div>
+
 
 ## Introduction
 
@@ -44,7 +49,12 @@ After pulling and refining the data from the Twitter api and importing the requi
 
 Before we performed the tokenization on the dataset, we created a word cloud with our cleaned dataset to visualize the most important words. A word cloud is a visual representation of text data, which is often used to depict keyword metadata on websites, or to visualize free form text. Tags are usually single words, and the importance of each tag is shown with font size or color.
 
-![WordCloud](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/images/wordcloud%20new.png)
+<div align="center">
+  
+<img src="https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/images/wordcloud%20new.png" width="400">
+  
+</div>
+
 
 From our word cloud above, we see our most dominant and important words aside South Africa relate to violence and that exactly is what we are tracking.
 
