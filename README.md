@@ -5,7 +5,7 @@
 |---|---|
 | [Main Notebook]() | Main Notebook submitted for DSI Assignment  |
 | [Airflow DAG File](https://github.com/SitwalaM/nlp-topic-modelling/blob/main/scripts/nlp_dag.py) | Main pipeline scripts |
-|  |  |
+|  [Requirements](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/requirements.txt)| Dependencies for deployment on EC2 |
   
 </div>
 
