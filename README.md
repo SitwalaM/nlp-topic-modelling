@@ -1,4 +1,15 @@
 # Topic Modelling with Natural Language Processing (NLP)
+<div align="center">
+  
+| File | Description |
+|---|---|
+| [Main Notebook]() | Main Notebook submitted for DSI Assignment  |
+| [Airflow DAG File](https://github.com/SitwalaM/nlp-topic-modelling/blob/main/scripts/nlp_dag.py) | Main pipeline scripts |
+|  |  |
+  
+</div>
+
+
 ## Project Motivation and Description
 
 Public sentiment can often be gauged by activity and discussions on social media platforms such as twitter. Topic modelling is an unsupervised machine learning algorithm that can be used to collect abstract topics in a collection of documents. In this project, the aim is to use topic modelling to monitor activity on tweets that are polarizing in nature and could lead to public unrest. This type of modelling can be used for other use cases such as tracking activity in discussions around investments such as cryptocurrency. In this project, we use data from South Africa to use topic modelling to attempt to isolate tweets centred around anti-foreigner sentiment. These insights can be used as an alert for possible unrest due to rise in polarizing discussions on social media. The architecture of the for the pipeline used is shown below, a topic model is used to process a batch of tweets every 8 hours and the metrics for the topic of interest (anti-foreigner sentiment) are monitored in a dashboard.
@@ -57,7 +68,7 @@ We also tried modelling with Non-Negative Matrix Factorization and the results f
 
 ## Dashboard
 
-A dashboard tracking the trend of a single topic of interest has been built and deployed using Tableau Public. The dashboard has been deployed to [NLP Tweet Monitor](https://)
+A dashboard tracking the trend of a single topic of interest has been built and deployed using Tableau Public. The dashboard has been deployed to [NLP Tweet Monitor](https://public.tableau.com/app/profile/douglas.obeng4472/viz/Tanamadosi1/Dashboard?publish=yes)
 
 ## Credits
 
