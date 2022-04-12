@@ -57,6 +57,8 @@ We also tried modelling with Non-Negative Matrix Factorization and the results f
 
 ## Dashboard
 
+A dashboard tracking the trend of a single topic of interest has been built and deployed using Tableau Public. The dashboard has been deployed to [NLP Tweet Monitor](https://)
+
 ## Credits
 
 1. [Airflow on AWS EC2](https://christo-lagali.medium.com/getting-airflow-up-and-running-on-an-ec2-instance-ae4f3a69441)
@@ -75,7 +77,7 @@ We also tried modelling with Non-Negative Matrix Factorization and the results f
 
 ## Authors
 1. [Nancy](https://github.com/NancyArmah)
-2. [Douglas](https://github.com/obengdouglas0)
+2. [Douglas](https://github.com/obengdouglas)
 3. [Mary](https://github.com/githinjimary)
 4. [Siwala](https://github.com/SitwalaM)
 
