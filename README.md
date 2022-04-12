@@ -2,7 +2,8 @@
 ## Project Motivation and Description
 
 Public sentiment can often be gauged by activity and discussions on social media platforms such as twitter. Topic modelling is an unsupervised machine learning algorithm that can be used to collect abstract topics in a collection of documents. In this project, the aim is to use topic modelling to monitor activity on tweets that are polarizing in nature and could lead to public unrest. This type of modelling can be used for other use cases such as tracking activity in discussions around investments such as cryptocurrency. In this project, we use data from South Africa to use topic modelling to attempt to isolate tweets centred around anti-foreigner sentiment. These insights can be used as an alert for possible unrest due to rise in polarizing discussions on social media. The architecture of the for the pipeline used is shown below, a topic model is used to process a batch of tweets every 8 hours and the metrics for the topic of interest (anti-foreigner sentiment) are monitored in a dashboard.
-[sysstem]()
+
+![system](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/images/system.png)
 
 ## Introduction
 
