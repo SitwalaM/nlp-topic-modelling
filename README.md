@@ -71,6 +71,8 @@ We also tried modelling with Non-Negative Matrix Factorization and the results f
 
 6. [Sklearn LDA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html)
 
+7. [Grid Searching LDA](https://www.machinelearningplus.com/nlp/topic-modeling-python-sklearn-examples/#9buildldamodelwithsklearn)
+
 ## Authors
 1. [Nancy](https://github.com/NancyArmah)
 2. [Douglas](https://github.com/obengdouglas0)
