@@ -27,23 +27,23 @@ Natural language processing (NLP) refers to the branch of computer science—and
 
 For this project we chose to focus on the **Topic Modelling** aspect of Natural Language Processing. 
 
-Topic modelling is recognizing the words from the topics present in the document or the corpus of data. This is useful because extracting the words from a document takes more time and is much more complex than extracting them from topics present in the document. For example, there are 1000 documents and 500 words in each document. So to process this it requires 500x1000 = 500000 threads. So when you divide the document containing certain topics then if there are 5 topics present in it, the processing is just 5x500 words = 2500 threads. This is simplier than processing the entire document and this is how topic modelling works.
+Topic modelling is recognizing the words from the topics present in the document or the corpus of data. This is useful because extracting the words from a document takes more time and is much more complex than extracting them from topics present in the document. For example, there are 1000 documents and 500 words in each document, to process this requires 500000(500x1000) threads. When you divide the document containing certain topics, there are 5 topics present in it, the processing is just 5x500 words = 2500 threads. This is simplier than processing the entire document.
 
-In Topic modelling, topics that best describes a set of documents are identified. These topics will only emerge during the topic modelling process (therefore called latent). And one popular topic modelling technique is known as Latent Dirichlet Allocation (LDA). It is an unsupervised approach of recognizing or extracting the patterns of word clusters and frequencies of words in the document by detecting the patterns like clustering algorithms which divides the data into different parts.
+In topic modelling, topics that best describes a set of documents are identified. These topics will only emerge during the topic modelling process (therefore called latent). And one popular topic modelling technique is known as Latent Dirichlet Allocation (LDA). It is an unsupervised approach of recognizing or extracting the patterns of word clusters and frequencies of words in the document by detecting the patterns like clustering algorithms which divides the data into different parts.
 
-A very important thing to keep in mind here is that it's actually very difficult to evaluate an unsupervised learning model's effectiveness because we didn't actually know the correct topic or the right answer to begin with. All we know is that the documents clustered together share some sort of similar topic ideas. It's up to the user to identify what these topics actually represent. 
+A very important thing to keep in mind here is that, it's actually very difficult to evaluate an unsupervised learning model's effectiveness as topics can often be abstract. It's up to the user to identify what these topics actually represent. 
 
 The text preprocessing phase in NLP involves removing stopwords, punctuation marks and other unnecessary symbols, stemming, lemmatization and encoding them to ML language using [Countvectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) or [Tfidf](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) vectorizer to make text processing easier.
 
 ## Dataset Used
 
-We used Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using [Tweepy](http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to enbale us track the change in activities on topics such as unrest and riots.
+We used Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using [Tweepy](http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to as a proof of concept and based the target topic on possible polarizing.
 
 Notebook used to extract data:[ Data Pull Notebook](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/notebooks/twitter_starter.ipynb)
 
 ## Preprocessing
 
-After pulling and refining the data from the Twitter api and importing the required packages, we then converted it into a data frame and cleaned the data using a regex function to remove emojis, hashtags, extra spaces, punctuations, usernames, urls, and other unecessary signs and symbols so we can tokenize it for the next steps. Also, all stop words were removed using nltk stopwords.
+After pulling and refining the data from using Twitter API, we then converted it into a data frame and cleaned the data using a regex function to remove emojis, hashtags, extra spaces, punctuations, usernames, urls, and other unecessary signs and symbols so we can tokenize it for the next steps. Also, all stop words were removed using nltk stopwords.
 
 ### Word Cloud
 
@@ -60,7 +60,7 @@ From our word cloud above, we see our most dominant and important words aside So
 
 ### Tokenization
 
-Next we performed tokenization by using the **Python split() Function** to split the tweets into smaller units, such as individual so the meaning of the text could easily be interpreted by analyzing the words present in the text. Before processing a natural language, we need to identify the words that constitute a string of characters. That’s why tokenization is the most basic step to proceed with NLP (text data). 
+Next we performed tokenization by using the **Python split() Function** to split the tweets into smaller units, so the meaning of the text could easily be interpreted by analyzing the words present in the text. Before processing a natural language, we need to identify the words that constitute a string of characters. That’s why tokenization is the most basic step to proceed with NLP (text data). 
 
 ### Lemmentization
 
@@ -90,7 +90,7 @@ A dashboard tracking the trend of a single topic of interest has been built and 
 
 4. [NLP Tutorial Blog - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-perform-tokenization/#:~:text=Tokenization%20using%20Gensim-,What%20is%20Tokenization%20in%20NLP%3F,as%20individual%20words%20or%20terms.)
 
-5. [LDA](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
+5. [LDA Wiki](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
 
 6. [Sklearn LDA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html)
 
