@@ -80,6 +80,14 @@ We also tried modelling with Non-Negative Matrix Factorization and the results f
 
 A dashboard tracking the trend of a single topic of interest has been built and deployed using Tableau Public. The dashboard has been deployed to [NLP Tweet Monitor](https://public.tableau.com/app/profile/douglas.obeng4472/viz/Tanamadosi1/Dashboard?publish=yes)
 
+## Conclusion
+
+* As tweets are quite short, models are very difficult to optimize for interpretable topics.
+* Use of N-grams for the modelling improves interpretability
+* The work presented here provides a starting point for using NLP monitor tweets for topics of interest.
+* As tweets are extremely dynamic, model drift is a big problem for this kind of deployment. The model needs to be retrained and reviewed very frequently. In this case, the model interpretability deterioted within a week of running the pipeline. 
+* Some georaphical locations don't have a way of isolating tweets to location, all tweets used in this experiment are only a subset of tweets in the location.
+
 ## Credits
 
 1. [Airflow on AWS EC2](https://christo-lagali.medium.com/getting-airflow-up-and-running-on-an-ec2-instance-ae4f3a69441)
