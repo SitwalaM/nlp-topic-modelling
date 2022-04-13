@@ -3,9 +3,10 @@
   
 | File | Description |
 |---|---|
-| [Main Notebook](https://github.com/SitwalaM/nlp-topic-modelling/tree/develop) | Main Notebook submitted for DSI Assignment  |
+| [Main Notebook](https://github.com/SitwalaM/nlp-topic-modelling/blob/main/Topic_Modelling_Final_TeamB.ipynb) | Main Notebook submitted for DSI Assignment  |
 | [Airflow DAG File](https://github.com/SitwalaM/nlp-topic-modelling/blob/main/scripts/nlp_dag.py) | Main pipeline scripts |
 |  [Requirements](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/requirements.txt)| Dependencies for deployment on EC2 |
+  |[Dashboard](https://public.tableau.com/views/Tanamadosi1/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)|Tableau Public Dashboard|
   
 </div>
 
