@@ -3,7 +3,7 @@
   
 | File | Description |
 |---|---|
-| [Main Notebook](https://github.com/SitwalaM/nlp-topic-modelling/tree/develop) | Main Notebook submitted for DSI Assignment  |
+| [Main Notebook](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/Topic_Modelling_Final_TeamB.ipynb) | Main Notebook submitted for DSI Assignment  |
 | [Airflow DAG File](https://github.com/SitwalaM/nlp-topic-modelling/blob/main/scripts/nlp_dag.py) | Main pipeline scripts |
 |  [Requirements](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/requirements.txt)| Dependencies for deployment on EC2 |
   
