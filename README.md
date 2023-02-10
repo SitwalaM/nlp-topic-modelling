@@ -3,7 +3,7 @@
   
 | File | Description |
 |---|---|
-| [Main Notebook]() | Main Notebook submitted for DSI Assignment  |
+| [Main Notebook](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/Topic_Modelling_Final_TeamB.ipynb) | Main Notebook submitted for DSI Assignment  |
 | [Airflow DAG File](https://github.com/SitwalaM/nlp-topic-modelling/blob/main/scripts/nlp_dag.py) | Main pipeline scripts |
 |  [Requirements](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/requirements.txt)| Dependencies for deployment on EC2 |
   
@@ -56,7 +56,13 @@ Before we performed the tokenization on the dataset, we created a word cloud wit
 </div>
 
 
+<<<<<<< HEAD
 From our word cloud above, we see our most dominant and important words aside from South Africa relate to violence and that exactly is what we are tracking.
+||||||| 791b7b1
+From our word cloud above, we see our most dominant and important words aside South Africa relate to violence and that exactly is what we are tracking.
+=======
+From our word cloud above, we see our most dominant and important words aside South Africa relate to violence and that is exactly what we are tracking.
+>>>>>>> 1bab04ff7f16fb6319b143a294ee60af83a89c90
 
 ### Tokenization
 
@@ -79,6 +85,14 @@ We also tried modelling with Non-Negative Matrix Factorization and the results f
 ## Dashboard
 
 A dashboard tracking the trend of a single topic of interest has been built and deployed using Tableau Public. The dashboard has been deployed to [NLP Tweet Monitor](https://public.tableau.com/app/profile/douglas.obeng4472/viz/Tanamadosi1/Dashboard?publish=yes)
+
+## Conclusion
+
+* As tweets are quite short, models are very difficult to optimize for interpretable topics.
+* Use of N-grams for the modelling improves interpretability
+* The work presented here provides a starting point for using NLP monitor tweets for topics of interest.
+* As tweets are extremely dynamic, model drift is a big problem for this kind of deployment. The model needs to be retrained and reviewed very frequently. In this case, the model interpretability deterioted within a week of running the pipeline. 
+* Some georaphical locations don't have a way of isolating tweets to location, all tweets used in this experiment are only a subset of tweets in the location.
 
 ## Credits
 
