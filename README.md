@@ -3,9 +3,10 @@
   
 | File | Description |
 |---|---|
-| [Main Notebook](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/Topic_Modelling_Final_TeamB.ipynb) | Main Notebook submitted for DSI Assignment  |
+| [Main Notebook](https://github.com/SitwalaM/nlp-topic-modelling/blob/main/Topic_Modelling_Final_TeamB.ipynb) | Main Notebook submitted for DSI Assignment  |
 | [Airflow DAG File](https://github.com/SitwalaM/nlp-topic-modelling/blob/main/scripts/nlp_dag.py) | Main pipeline scripts |
 |  [Requirements](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/requirements.txt)| Dependencies for deployment on EC2 |
+  |[Dashboard](https://public.tableau.com/views/Tanamadosi1/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)|Tableau Public Dashboard|
   
 </div>
 
@@ -37,7 +38,7 @@ The text preprocessing phase in NLP involves removing stopwords, punctuation mar
 
 ## Dataset Used
 
-We used Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using [Tweepy](http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa to as a proof of concept and based the target topic on possible polarizing.
+We used Machine Learning to explore which topics our followers on twitter are engaging with the most. Next step is to actually get the data from a Twitter api using [Tweepy](http://docs.tweepy.org/en/latest/) and other tools to pull data and refine data to get to the data we need. We set our region to South Africa as a proof of concept and based the target topic on possible polarizing.
 
 Notebook used to extract data:[ Data Pull Notebook](https://github.com/SitwalaM/nlp-topic-modelling/blob/develop/notebooks/twitter_starter.ipynb)
 
@@ -109,5 +110,3 @@ A dashboard tracking the trend of a single topic of interest has been built and 
 2. [Douglas](https://github.com/obengdouglas)
 3. [Mary](https://github.com/githinjimary)
 4. [Siwala](https://github.com/SitwalaM)
-
-
